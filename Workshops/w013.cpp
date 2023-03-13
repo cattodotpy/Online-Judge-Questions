@@ -3,13 +3,14 @@
 
 using namespace std;
 
+
 bool isPrime(long long x)
 {
     if (x == 1)
     {
         return false;
     }
-    for (int i = 2; i <= sqrt(x); i++)
+    for (int i = 2; i < sqrt(x); i++)
     {
         if (x % i == 0)
         {
